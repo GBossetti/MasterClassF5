@@ -9,11 +9,13 @@ create table BandasMusicales (
 	Banda varchar(200) not null,
 	Coder varchar(100) not null
 )
+go
 
 insert into BandasMusicales (Banda, Coder)
 values ('Patricio Rey y sus Redonditos de Ricota', 'Gonzalo')
+go
 
-select * 
-from BandasMusicales
+select bd.Banda, bd.Coder
+from BandasMusicales bd
 
-delete from BandasMusicales
+--delete from BandasMusicales
