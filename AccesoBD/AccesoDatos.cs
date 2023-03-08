@@ -21,7 +21,7 @@ namespace AccesoBD
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=factoria_f5; integrated security=True");
+            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=masterclass_f5; integrated security=True");
             comando = new SqlCommand();
         }
 
