@@ -10,8 +10,10 @@ create table BandasMusicales (
 	Coder varchar(100) not null
 )
 
-insert into BandasMusicales (Banda, COder)
+insert into BandasMusicales (Banda, Coder)
 values ('Patricio Rey y sus Redonditos de Ricota', 'Gonzalo')
 
 select * 
 from BandasMusicales
+
+delete from BandasMusicales

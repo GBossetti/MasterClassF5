@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class BandasElegidas
+    public class BandasElegidas
     {
         public string banda { get; set; }
         public string coder { get; set; }
