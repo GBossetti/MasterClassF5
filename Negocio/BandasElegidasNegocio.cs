@@ -10,14 +10,14 @@ namespace Negocio
 {
     public class BandasElegidasNegocio
     {
-        public BandasElegidas cargarDatos()
+        public BandasElegidas cargarDatos(string coder)
         {
             AccesoDatos datos = new AccesoDatos();
             BandasElegidas bandas = new BandasElegidas();
 
             try
             {
-                datos.setearConsulta("select bd.Banda, bd.Coder from bandasMusicales bd ");
+                datos.setearConsulta("select bd.Banda, bd.Coder from bandasMusicales bd where bd.Coder = '" + coder + "'");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())

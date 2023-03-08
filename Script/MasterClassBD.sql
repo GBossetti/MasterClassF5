@@ -15,7 +15,16 @@ insert into BandasMusicales (Banda, Coder)
 values ('Patricio Rey y sus Redonditos de Ricota', 'Gonzalo')
 go
 
-select bd.Banda, bd.Coder
+select *
+from BandasMusicales
+
+select	
+	bd.Banda,
+	bd.Coder
 from BandasMusicales bd
+where bd.Coder = 'Gonzalo' 
+
+
+
 
 --delete from BandasMusicales

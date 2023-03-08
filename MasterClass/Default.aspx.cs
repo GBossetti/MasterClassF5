@@ -17,8 +17,15 @@ namespace MasterClass
             BandasElegidas bandas = new BandasElegidas();
             //bandas.banda = "Patricio Rey y sus Redonditos de Ricota";
             //bandas.coder = "Gonzalo";
-
-            bandas = negocio.cargarDatos();
+            
+            try
+            {
+                bandas = negocio.cargarDatos("Gonzalo");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
             lblBanda.Text = bandas.banda;
             lblCoder.Text = bandas.coder;
