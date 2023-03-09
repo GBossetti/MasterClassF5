@@ -20,15 +20,17 @@ namespace MasterClass
             
             try
             {
-                bandas = negocio.cargarDatos("Gonzalo");
+                bandas = negocio.cargarDatos("Pepe");
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
-            lblBanda.Text = bandas.banda;
-            lblCoder.Text = bandas.coder;
+            
+            if(!(bandas.banda is null))
+                lblBanda.Text = bandas.banda;
+            if(!(bandas.coder is null))
+                lblCoder.Text = bandas.coder;
         }
     }
 }
