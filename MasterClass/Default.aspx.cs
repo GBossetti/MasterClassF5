@@ -20,11 +20,12 @@ namespace MasterClass
             
             try
             {
-                bandas = negocio.cargarDatos("Pepe");
+                bandas = negocio.cargarDatos("Gonzalo");
             }
             catch (Exception ex)
             {
-                throw ex;
+                Response.Redirect("Error.aspx", false);
+                //throw ex;
             }
             
             if(!(bandas.banda is null))

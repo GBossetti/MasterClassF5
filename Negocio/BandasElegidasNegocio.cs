@@ -17,6 +17,7 @@ namespace Negocio
 
             try
             {
+                //datos.setearConsulta("select bd.Banda, bd.Coder from bandasMusicales bd where bd.Coder = '" + coder);
                 datos.setearConsulta("select bd.Banda, bd.Coder from bandasMusicales bd where bd.Coder = '" + coder + "'");
                 datos.ejecutarLectura();
 
